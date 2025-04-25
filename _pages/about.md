@@ -1,6 +1,6 @@
 ---
 layout: about
-title: sobre
+title: Sobre
 permalink: /
 subtitle: Entusiasta de tecnologia e ciência <3.
 
