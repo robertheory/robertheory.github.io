@@ -1,10 +1,8 @@
-- title: General Information
+- title: Informação Geral
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+    - name: Nome Completo
+      value: Roberto Costa
     - name: Languages
       value: English, German
 
