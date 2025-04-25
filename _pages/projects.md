@@ -5,7 +5,7 @@ permalink: /projects/
 description: Projetos pessoais e que tive participação.
 nav: true
 nav_order: 3
-display_categories: [trabalho, pessoal]
+display_categories: [pessoal]
 horizontal: false
 ---
 
