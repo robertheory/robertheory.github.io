@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://robertheory.github.io/sitemap.xml
+Sitemap: https://robertheory.github.io//sitemap.xml
