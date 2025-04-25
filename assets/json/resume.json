@@ -151,17 +151,132 @@
   "certificates": [],
   "skills": [
     {
-      "name": "Google Cloud Platform (GCP)",
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Golang",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "React",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "Next.js",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "AWS",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "GraphQL",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "SQLite",
+      "level": "Advanced",
+      "keywords": []
+    },    
+    {
+      "name": "MongoDB",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Redis",
       "level": "",
       "keywords": []
     },
     {
-      "name": "NestJS",
+      "name": "Microservices",
       "level": "",
       "keywords": []
     },
     {
-      "name": "Full-Stack Development",
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scrum",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Kanban",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CI/CD",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Observability",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Test-Driven Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Coaching",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mentoring",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Public Speaking",
       "level": "",
       "keywords": []
     }
