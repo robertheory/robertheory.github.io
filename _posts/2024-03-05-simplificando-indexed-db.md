@@ -14,6 +14,7 @@ A partir daqui é menos ódio e mais amor pela forma de armazenamento mais poder
 O IndexedDB pode ser um pouco complicado a princípio, mas ao final deste artigo você vai entender o essencial para usar o melhor desta ferramenta ao seu favor!
 
 ## Tabela de Conteúdos
+
 - [Pontos fortes](#pontos-fortes)
 - [Pontos de atenção](#pontos-atencao)
 - [Teoria e conceitos do IndexedDB](#teoria)
@@ -30,7 +31,6 @@ O IndexedDB pode ser um pouco complicado a princípio, mas ao final deste artigo
 - [Conclusão](#conclusao)
 - [Referências](#referencias)
 
-
 De acordo com [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API):
 
 > IndexedDB é uma API de baixo nível para armazenamento no lado do cliente de quantidades significativas de dados estruturados, incluindo arquivos/blobs.
@@ -40,6 +40,7 @@ O IndexedDB é um sistema de banco de dados transacional, semelhante a bancos qu
 Nele trabalhamos com o armazenamento de objetos indexados com chaves, logo, podemos sim considerá-lo um banco de dados NoSQL, e nesse aspecto lembra um pouco bancos como o Redis que trabalham no esquema Chave-Valor.
 
 ## Pontos fortes <a name="pontos-fortes"></a>
+
 - Alta performance em consultas: Seu funcionamento baseado em índices permite realizar consultas de forma mais performática em comparação aos mecanismos de WebStorage.
 - Altas cotas de armazenamento: Ainda em comparação com o WebStorage, que pode armazenar cotas de até 5 MiB, o IndexedDB oferece até 10% do tamanho total do disco onde o perfil do usuário está armazenado.
 
@@ -64,16 +65,18 @@ Sim, diferente do localStorage que armazena apenas texto aqui você pode armazen
 
 - API Verbosa: As operações em IndexedDB muitas vezes exigem muito código para realizar tarefas simples. Isso pode tornar o desenvolvimento mais demorado e propenso a erros.
 
-## Teoria e conceitos do IndexedDB  <a name="teoria"></a>
+## Teoria e conceitos do IndexedDB <a name="teoria"></a>
 
 ![estrutura exemplo indexedDB](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3cykrg8mkdivn969844v.png)
 
 ### Database <a name="database"></a>
+
 A estrutura de mais alto nível do IndexedDB.
 Nele iremos conter as Object Stores, onde de fato iremos armazenar os dados.
 É possível criar múltiplos Databases, que por sua vez podem conter múltiplas Object Stores.
 
 ### Object Store <a name="object-store"></a>
+
 Cada Object Store é um compartimento individual onde seus dados serão armazenados.
 Traçando um paralelo com bancos de dados relacionais, as Object Stores normalmente são criadas para um fim específico, como armazenar apenas produtos, ou apenas posts de um blog.
 É comum criar uma Object Store para cada finalidade dentro da aplicação, como: armazenar uma lista de produtos, publicações de um blog, etc.
@@ -105,6 +108,7 @@ Neste novo índice podemos observar as seguintes mudanças:
 A Object Store anterior que se baseava em um ID incremental ainda existe, contudo, no ato da consulta da Object Store é crucial informar o índice de consulta desejado, caso contrário a consulta será realizada no índice padrão.
 
 ### Transações <a name="transacoes"></a>
+
 Uma transação é um procedimento que envolve uma operação ou grupo de operações que garante a integridade do banco de dados.
 
 Se uma das ações de uma transação falhar, nenhuma delas será aplicada e o banco de dados retornará ao estado em que estava antes do início da transação.
@@ -112,6 +116,7 @@ Se uma das ações de uma transação falhar, nenhuma delas será aplicada e o b
 Todas as operações de leitura ou gravação no IndexedDB precisam fazer parte de uma transação. Isso permite operações atômicas de leitura-modificação-gravação sem precisar se preocupar com outras linhas de execução agindo no banco de dados ao mesmo tempo.
 
 ### Versionamento <a name="versionamento"></a>
+
 No IndexedDB existe o conceito de versão do banco de dados, onde cada versão é numerada, normalmente de forma sequencial.
 
 Quando o banco é executado pela primeira vez, a sua versão começa em `0`.
@@ -142,6 +147,7 @@ if (!window.indexedDB) {
   );
 }
 ```
+
 Este e outros exemplos de código em: https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB
 
 ### Criando o banco e a store <a name="criando"></a>

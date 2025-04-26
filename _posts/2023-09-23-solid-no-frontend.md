@@ -12,14 +12,15 @@ Começar um novo projeto é o caminho fácil, o desafio vem em manter este proje
 Aqui trarei exemplos de conceito e código, demonstrando como aplicar os tão famosos princípios SOLID no frontend para uma aplicação sustentável e resistente ao tempo.
 
 ## Table Of Contents
-* [O Problema do ReactJS...](#chapter-1)
-* [Resolvendo alguns problemas](#chapter-2)
-* [Aplicando SOLID no ReactJS](#chapter-3)
-  * [Single Responsability Principle](#chapter-3.1)
-  * [Open-Closed Principle](#chapter-3.2)
-  * [Liskov Substituition Principle](#chapter-3.3)
-  * [Interface Segregation Principle](#chapter-3.4)
-  * [Dependency Inversion Principle](#chapter-3.5)
+
+- [O Problema do ReactJS...](#chapter-1)
+- [Resolvendo alguns problemas](#chapter-2)
+- [Aplicando SOLID no ReactJS](#chapter-3)
+  - [Single Responsability Principle](#chapter-3.1)
+  - [Open-Closed Principle](#chapter-3.2)
+  - [Liskov Substituition Principle](#chapter-3.3)
+  - [Interface Segregation Principle](#chapter-3.4)
+  - [Dependency Inversion Principle](#chapter-3.5)
 
 ## O Problema do ReactJS... <a name="chapter-1"></a>
 
@@ -36,6 +37,7 @@ Essa flexibilidade é um ponto chave para o React, ela te permite realizar os ma
 No entanto isso não é apenas um ponto positivo...
 
 Frequentemente aplicações ReactJS chegam em um ponto onde a manutenção é dificultosa, repetindo-se muito código e tendo bastante retrabalho, e se você ainda não viu isso ocorrendo, temos 3 possibilidades para considerar:
+
 - Seu projeto é muito novo;
 - Seu projeto é pequeno;
 - Existe alguém cuidando da arquitetura e design de código do seu frontend.
@@ -51,6 +53,7 @@ A componentização é uma mão na roda na hora de programar interfaces, mas cri
 Uma coisa que você já deve ter percebido é que a forma como seus componentes se relacionam está diretamente ligada a qualidade do seu frontend.
 
 Algumas más práticas que existem:
+
 - Prop Drilling
 
 Quando um componente pai passa um estado para o filho, que passa para seu filho, que passa para seu filho, que passa para seu filho, etc.
@@ -71,25 +74,30 @@ Pergunte-se, entenda o uso de cada coisa e saiba suas alternativas.
 Por vezes um hook mal implementado pode fazer com que algumas requisições seja feitas a mais ou que algum regra da sua aplicação não seja devidamente validada, obviamente podemos chegar a problemas de segurança e de desempenho aqui.
 
 Requisitos para mandar bem no design de código no ReactJS:
+
 1. Dominar a base: JavaScript ou TypeScript;
 2. React Hooks;
 3. Context API;
 4. Conheça o terreno: saiba as opções de pacotes que tem para fazer cada função.
 
 ### 1. Dominar a base
+
 Essa não é difícil de explicar: seja JS ou TS, se você não estiver seguro do que está fazendo e se não tiver algum conhecimento prévio de estruturas de dados e do funcionamento dessas tecnologias isso torna-se um fator limitante muito grande.
 Conforme você verá aqui, alguns conceitos são mais abstratos que outros, e certas abstrações ficam mais simples de se entender depois de um certo tempo batendo a cabeça no código ou sentindo a necessidade natural de resolver um problema no código.
 
 ### 2. React Hooks
+
 Sim, todo dia lança um React Hook novo e você vai ter mesmo que ficar se atualizando nisso???
 Infelizemente você está na área de tecnologia, se atulizar é algo intrínseco da sua carreira.
 Mas olhe por esse lado:
-Os Hooks são seus aliados, eles resolvem problemas muito importantes do ciclo de vida do React, se existe um novo Hook  provavelmente ele vai resolver um problema interessante e pode te ajudar em algo, então pelo menos saiba o que eles fazem, isso já é de grande ajuda.
+Os Hooks são seus aliados, eles resolvem problemas muito importantes do ciclo de vida do React, se existe um novo Hook provavelmente ele vai resolver um problema interessante e pode te ajudar em algo, então pelo menos saiba o que eles fazem, isso já é de grande ajuda.
 
 ### 3. Context API
+
 A amada Context API é uma ferramenta sensacional que temos no ReactJS para criar nossos próprios contextos e disponibilizá-los por toda aplicação ou onde acharmos necessário.
 Qual a importância dela?
 Criando nossos próprios contextos podemos atingir várias metas:
+
 - Diminuir repetição de código;
 - Concentrar o controle de uma funcionlidade em um só lugar;
 - Criar abstrações de alto nível;
@@ -101,6 +109,7 @@ Conhecer onde está pisando te dá maior segurança para seguir em frente.
 Entender melhor do ecossistema do ReactJS e do JavaScript é essencial para que você encontre as peças certas para seu quebra-cabeça.
 Como temos muitas opções, é muito importante que você pelo menos esteja ciente dos prós e contras das principais para tomar decisões conscientes..
 Algumas das decições que temos:
+
 - CSS: CSS, CSS Modules, SASS, Styled-Components, TailwindCSS;
 - Gerenciamento de estado: Redux, Recoil, nenhuma hahaha
 - Router: React Router Dom, Appwrite
@@ -122,12 +131,13 @@ Todos os exemplos de código são parte do repositório que criei para este arti
 Os exemplos são inspirados em situações reais e também nas referências ao final do artigo.
 
 ### S — Single Responsibility <a name="chapter-3.1"></a>
+
 Seus componentes deve ter responsabilidades bem definidas e isoladas.
 
 Se o seu componente faz muita coisa, pode ser uma boa oportunidade de componentizar.
 
 ![Single Responsibility](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vzsl0tkevnb5yluiadcc.png)
-*All illustrations in this article are by [Ugonna Thelma](https://medium.com/@ugonnat)
+\*All illustrations in this article are by [Ugonna Thelma](https://medium.com/@ugonnat)
 
 Exemplo:
 Neste exemplo, apresento um componente consulta em API e ordenação de resultados que concetra toda a lógica da funcionalidade em si próprio:
@@ -209,6 +219,7 @@ const SearchAndSort = () => {
 ```
 
 Ele é candidato a ser dividido em várias partes, podemos citar:
+
 - Acesso à API e retorno de dados;
 - Interação com a busca e feedback visual;
 - Apresentação do resultado;
@@ -730,6 +741,7 @@ O verdadeiro potencial dos princípios SOLID mora não só na sua adoção e com
 Neste exemplo bônus eu vou juntar 2 deles: Open-Close Principle com Dependency Inversion Principle.
 
 O objetivo é:
+
 - Tornar o componente de formulário extensível para que seus campos sejam customizáveis;
 - Tornar este componente genérico para que seu componente pai lide com os detalhes de implementação do submit.
 
@@ -799,19 +811,21 @@ export const App = () => {
 ```
 
 Note que o ponto onde parei ainda está longe do ideal:
+
 - O componente pai recebe seus campos a partir do evento de submit e não temos compo inferir tipos nisso _ainda_;
 - Não temos tratamento de erros;
 
 Apesar da implementação estar longe de ser ideal e poder evoluir bastante ainda, o principal é cultivar a ideia de fundir 2 princípios SOLID para tornar o componente o mais genérico e extensível possível.
 
-## Conclusão 
+## Conclusão
 
 Design de software pode ser algo bem abstrato e complexo de entender a princípio, mas é que naturalmente iremos enxergar a necessidade de utilizar.
 
 Tenho certeza que esses princípios são de grande utilidade no desenvolvimento Frontend, especialmente nas aplicações ReactJS onde nós somos responsáveis por todas as decisões na aplicação, desde de pacotes e funcionamento, até arquitetura e estrutura de pastas que não são a mesma coisa 😂.
 
 ## Referências
-Titulo:  The S.O.L.I.D Principles in Pictures
+
+Titulo: The S.O.L.I.D Principles in Pictures
 Autor: Ugonna Thelma
 May 18, 2020
 https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898

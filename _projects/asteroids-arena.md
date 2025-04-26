@@ -21,8 +21,10 @@ O objetivo do jogo é destruir as naves inimigas e sobreviver o maior tempo poss
 - **Backend**: Go
 
 ## Repositório
+
 - [Backend](https://github.com/robertheory/asteroids-arena-server)
 - [Frontend](https://github.com/robertheory/asteroids-arena-web)
 
 ## Demonstração
+
 - [Demo](https://asteroids-arena.vercel.app/)

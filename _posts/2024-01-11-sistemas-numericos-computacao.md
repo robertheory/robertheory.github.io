@@ -11,16 +11,15 @@ categories: computacao
 
 Vamos juntos em uma jornada para compreender as bases da computação e desbravar o mundo da tecnologia: **sistemas numéricos em computação!**
 
-
 ## Tabela de conteúdos
 
 - [Breve introdução à sistemas de numeração](#intro)
-   * [Decimal no detalhe](#decimal)
+  - [Decimal no detalhe](#decimal)
 - [Sistemas numéricos na computação](#sistemas-numericos)
-   * [Binário](#binario)
-   * [Convertendo binário para decimal](#binario-decimal)
-   * [Decimal pra binário](#decimal-binario)
-   * [Contando em binário](#contando-binario)
+  - [Binário](#binario)
+  - [Convertendo binário para decimal](#binario-decimal)
+  - [Decimal pra binário](#decimal-binario)
+  - [Contando em binário](#contando-binario)
 - [Conclusão](#conclusao)
 - [Referências](#referencias)
 
@@ -48,7 +47,7 @@ E ao longo do tempo foi-se desenvolvendo o sistema de numeração que utilizamos
 Sistema decimal
 ![Sistema decimal](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lhm3c3mluh145aw7gw6a.png)
 
-O sistema decimal está presente em diversas áreas de conhecimento modernas, contudo, há áreas com necessidades específicas que desenvolveram diferentes sistemas para solucionar problemas, e uma delas é a *computação*.
+O sistema decimal está presente em diversas áreas de conhecimento modernas, contudo, há áreas com necessidades específicas que desenvolveram diferentes sistemas para solucionar problemas, e uma delas é a _computação_.
 
 ### Decimal no detalhe <a name="decimal"></a>
 
@@ -81,6 +80,7 @@ Agora, com 2 dígitos temos 100 possibilidades diferentes:
 ```
 
 E o padrão segue: a cada dígito a mais em um número decimal temos a quantidade de combinações anterior vezes 10!
+
 - 1 dígito decimal: 10 opções (0 à 9)
 - 2 dígitos decimais: 10 × 10 = 100 opções (00 à 99)
 - 3 dígitos decimais: 10 × 10 × 10 = 1000 opções (000 à 999)
@@ -111,6 +111,7 @@ Como mencionamos antes, binário é um sistema de base 2, logo, para representar
 ![binário 101011](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lfp6eaewsl2a21nspedh.png)
 
 Seguindo a lógica da quantidade de dígitos:
+
 - 1 dígito binário: 2 opções (0 ou 1)
 - 2 dígitos binários: 2 × 2 = 4 opções (00, 01, 10, 11)
 - 3 dígitos binários: 2 × 2 × 2 = 8 opções (000, 001, 010, 011, 100, 101, 110, 111)
@@ -124,6 +125,7 @@ Como convenção, utilizamos potências de 2 para representar a progressão em b
 Agora vamos ver na prática como se realiza esta conversão.
 
 Regras da conversão:
+
 - Em binário contamos da direita para esquerda;
 - Dígitos `0` em uma posição específica contribuem para o valor total, mas seu valor é zero;
 - Cada casa (ordem) tem um peso diferente.
@@ -133,7 +135,7 @@ Exemplo prático:
 ```
 Converter para decimal 🤔
 
- 0   1   0   1   1   0   0   1 
+ 0   1   0   1   1   0   0   1
 ```
 
 Respectivamente, cada casa deste número tem seu peso (ordem) começando da direita:
@@ -158,6 +160,7 @@ No binário vamos fazer a potência da ordem para chegar no valor de cada dígit
 Contudo, devemos lembrar que o dígito `0` (zero) significa desligado, dessa forma vamos cumprir uma das regras citadas anteriormente: o dígito `0` não possui valor.
 
 Assim obtemos o seguinte resultado:
+
 ```
  0   1   0   1   1   0   0   1
 2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0
@@ -180,7 +183,7 @@ Note que nem sempre a divisão irá terminar com resto zero, o que é comum para
 
 ### Contando em binário <a name="contando-binario"></a>
 
-A habilidade de contar em binário é uma aptidão fundamental em diversos domínios, sendo especialmente crucial no universo da programação e lógica digital. 
+A habilidade de contar em binário é uma aptidão fundamental em diversos domínios, sendo especialmente crucial no universo da programação e lógica digital.
 
 Compreender como os números binários se desdobram é uma peça-chave para programadores, engenheiros e entusiastas da tecnologia.
 
@@ -195,6 +198,7 @@ Assim nós zeramos a casa das unidades e incrementamos a casa das dezenas, resul
 Em binário temos apenas 2 dígitos de possibilidade, então é muito fácil atingir o limite e precisar fazer o "vai um".
 
 Observe o padrão:
+
 ```
 Binario  Decimal
  0000       0
