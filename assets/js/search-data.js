@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-solid-no-frontend",
+        },{id: "post-redux-101-gerenciadores-de-estados-simplificados",
+      
+        title: "Redux 101 - gerenciadores de estados simplificados",
+      
+      description: "Aprenda de forma simples e prática como usar Redux para gerenciar estados complexos em aplicações ReactJS.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/redux-101/";
+        
+      },
+    },{id: "post-solid-no-frontend",
       
         title: "SOLID no Frontend",
       
