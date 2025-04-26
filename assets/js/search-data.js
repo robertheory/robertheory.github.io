@@ -44,7 +44,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-redux-101-gerenciadores-de-estados-simplificados",
+        },{id: "post-simplificando-indexeddb",
+      
+        title: "Simplificando IndexedDB",
+      
+      description: "Aprenda a usar IndexedDB de forma simples e prática",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/simplificando-indexed-db/";
+        
+      },
+    },{id: "post-sistemas-numéricos-na-computação-introdução-e-binário",
+      
+        title: "Sistemas Numéricos na Computação - Introdução e Binário",
+      
+      description: "Neste post, vamos explorar os sistemas numéricos na computação, com foco no sistema binário.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/sistemas-numericos-computacao/";
+        
+      },
+    },{id: "post-redux-101-gerenciadores-de-estados-simplificados",
       
         title: "Redux 101 - gerenciadores de estados simplificados",
       
