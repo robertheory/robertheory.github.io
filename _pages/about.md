@@ -12,7 +12,7 @@ profile:
     <p>Rio de Janeiro, RJ - Brasil</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -22,7 +22,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 5 # leave blank to include all the blog posts
 ---
 
 Desenvolvedor de software com mais de 10 anos de experiência, especializado em desenvolvimento full-stack, arquitetura de software e liderança de projetos, atuando principalmente em startups.

@@ -4,6 +4,6 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - robertheory/react-pwa-offline-request-queue
   - robertheory/asteroids-arena-server
   - robertheory/asteroids-arena-web
-  - robertheory/react-pwa-offline-request-queue
