@@ -2,8 +2,8 @@
   "basics": {
     "name": "Roberto Costa",
     "label": "Senior Fullstack Developer | AWS | TypeScript | Golang",
-    "image": "",
-    "email": "roberto.araujo339@gmail.com",
+    "image": "https://github.com/robertheory.png",
+    "email": "contato@robertheory.com",
     "phone": "",
     "url": "https://robertheory.com/",
     "summary": "Desenvolvedor de software com mais de 10 anos de experiência em programação, atuando principalmente em startups, especializado em desenvolvimento full stack, arquitetura de software e liderança de projetos.",
@@ -24,6 +24,11 @@
         "network": "GitHub",
         "username": "robertheory",
         "url": "https://github.com/robertheory"
+      },
+      {
+        "network": "Instagram",
+        "username": "robertheory",
+        "url": "https://www.instagram.com/robertheory/"
       }
     ]
   },
@@ -33,8 +38,13 @@
       "position": "Senior Full Stack Developer",
       "startDate": "2025-04-01",
       "endDate": "",
-      "summary": "",
-      "highlights": []
+      "summary": "Atuando como desenvolvedor full stack, focado em soluções de alta performance e escalabilidade.",
+      "highlights": [
+        "Desenvolvimento de sistemas de alta disponibilidade e escalabilidade.",
+        "Implementação de soluções em microserviços utilizando Google Cloud.",
+        "Colaboração com equipes multifuncionais para otimização de processos.",
+        "Desenvolvimento orientado a testes e integração contínua."
+      ]
     },
     {
       "name": "Tech In Rio",
@@ -53,7 +63,7 @@
       "position": "Senior Frontend Developer",
       "startDate": "2024-10-01",
       "endDate": "2025-04-01",
-      "summary": "",
+      "summary": "Desenvolvedor frontend sênior, liderando a equipe de desenvolvimento e implementando soluções modernas com NextJS 14+.",
       "highlights": [
         "Liderança de projetos frontend modernos utilizando Next.js e TypeScript.",
         "Implementação de boas práticas de qualidade de código e observabilidade.",
@@ -65,7 +75,7 @@
       "position": "Full Stack Engineer",
       "startDate": "2024-01-01",
       "endDate": "2025-02-01",
-      "summary": "",
+      "summary": "Atuou como especialista em soluções de software offline, focando em acessibilidade, segurança e arquitetura de dados.",
       "highlights": [
         "Liderança na implementação de funcionalidades offline.",
         "Desenvolvimento de soluções tecnológicas focadas em acessibilidade.",
@@ -77,7 +87,7 @@
       "position": "Full Stack Developer",
       "startDate": "2020-08-01",
       "endDate": "2023-11-01",
-      "summary": "",
+      "summary": "Atuou como líder técnico, reestruturando todo o frontend e implementando práticas de qualidade.",
       "highlights": [
         "Responsável por todo o desenvolvimento frontend e qualidade do software.",
         "Uso de ferramentas de observabilidade combinadas com desenvolvimento ágil.",
@@ -89,7 +99,7 @@
       "position": "Frontend Engineer",
       "startDate": "2022-03-01",
       "endDate": "2023-10-01",
-      "summary": "",
+      "summary": "Liderou uma equipe de desenvolvimento frontend, focando na criação de interfaces modernas e responsivas.",
       "highlights": [
         "Criação de novos projetos e engenharia de requisitos.",
         "Introdução de práticas de teste e validação de código.",
@@ -101,7 +111,7 @@
       "position": "Instrutor de Programação",
       "startDate": "2018-11-01",
       "endDate": "2020-08-01",
-      "summary": "",
+      "summary": "Atuou como educador de crianças e adolescentes, ensinando desde lógica de programação até robótica e programação de apps e jogos.",
       "highlights": [
         "Ensino de lógica, programação e robótica para crianças e adolescentes.",
         "Participação em eventos, workshops e aulas especiais."
@@ -112,7 +122,7 @@
       "position": "Estagiário",
       "startDate": "2015-05-01",
       "endDate": "2015-09-01",
-      "summary": "",
+      "summary": "Atuou como estagiário em manutenção de computadores e redes, desenvolvendo habilidades práticas na área de tecnologia.",
       "highlights": [
         "Instrutor nas disciplinas de manutenção e redes de computadores.",
         "Primeira experiência como educador, desenvolvendo habilidades de comunicação."
