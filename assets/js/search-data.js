@@ -109,6 +109,11 @@ ninja.data = [{
           description: "Um jogo em tempo real, competitivo, multiplayer, onde os jogadores controlam naves espaciais e competem uns contra os outros em um campo.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/asteroids-arena/";
+            },},{id: "projects-my-timeline",
+          title: 'My Timeline',
+          description: "Construa sua própria linha do tempo e conte a sua história de forma visual. A melhor maneira de contar uma história é mostrá-la.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/my-timeline/";
             },},{
         id: 'social-email',
         title: 'email',
